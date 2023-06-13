@@ -1,7 +1,7 @@
 from gestionnaireFichier import *
 
-class Menu():
-    def main(self):
+class Main():
+    def menu(self):
         print("1. Ajouter Employé")
         print("2. Afficher Employé")
         print("3. Ajouter Attraction avec ses chemins")
@@ -15,14 +15,14 @@ class Menu():
             chargerMatricules()
             chargerChemins()
             chargerAttractions()
-            menu.newEmploye()
+            main.newEmploye()
         if choix == "2":
             chargerMatricules()
             Employe.get_Employe(employe, input("Entrez un matricule, un nom, ou une équipe: "))
         if choix == "3":
             chargerChemins()
             chargerAttractions()
-            menu.newAtt()
+            main.newAtt()
         if choix == "4":
             pass
         if choix == "5":
@@ -87,10 +87,10 @@ class Menu():
                 fs.close()
 
 
-menu = Menu()
+main = Main()
 employe = Employe("a", "a", "a", "a")
 attraction = Attraction("a")
 
 while True:
-    choix = menu.main()
-    menu.choixUser(choix)
+    choix = main.menu()
+    main.choixUser(choix)
