@@ -1,0 +1,4 @@
+GrandHuitB:3#GrandHuitB:3#C:4#
+GrandeRoueA:3#
+GrandeRoueA:3#B:5#
+GrandeRoueA:3#B:5#C:10#
